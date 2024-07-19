@@ -40,7 +40,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-gray-600 to-gray-900 w-full text-white  flex flex-col items-center justify-center py-8">
+    <section className="bg-gradient-to-r from-gray-900 to-gray-800 w-full text-white  flex flex-col items-center justify-center py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center my-5">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

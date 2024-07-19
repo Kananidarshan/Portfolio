@@ -37,13 +37,22 @@ const Header = () => {
   }, [isDrawerOpen]);
 
   return (
-    <header className="bg-gray-800 text-white p-4 fixed w-full z-10">
+    <header className="bg-gradient-to-r from-gray-600 to-gray-900 text-white p-4 fixed w-full z-10">
       <nav className="flex justify-between items-center px-5">
-        <div className="text-xl font-bold">
-          <Link to="/">My Portfolio</Link>
+        <div className="flex justify-center items-center gap-3 text-xl font-bold">
+          <Link to="/">
+            <img
+              src="/images/portfoliologo.jpg"
+              alt="profilepic"
+              className="w-8 h-8 rounded-full"
+            />
+          </Link>
+          <Link to="/" className="hidden md:block">
+            My Portfolio
+          </Link>
         </div>
         {/* Drawer Button for Small and Medium Screens */}
-        <div className="sm:hidden flex items-center">
+        <div className="md:hidden flex items-center">
           <button
             onClick={toggleDrawer}
             className="flex items-center gap-2 py-2"
@@ -51,12 +60,22 @@ const Header = () => {
             <IoMdMenu className="text-2xl" />
           </button>
         </div>
-        <div className={`hidden lg:flex space-x-4`}>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/contact">Contact</Link>
+        <div className="hidden md:flex  space-x-4 font-semibold leading-4">
+          <Link to="/" className="hover:bg-slate-400 p-2 rounded-md">
+            Home
+          </Link>
+          <Link to="/about" className="hover:bg-slate-400 p-2 rounded-md">
+            About
+          </Link>
+          <Link to="/projects" className="hover:bg-slate-400 p-2 rounded-md">
+            Projects
+          </Link>
+          <Link to="/blog" className="hover:bg-slate-400 p-2 rounded-md">
+            Blog
+          </Link>
+          <Link to="/contact" className="hover:bg-slate-400 p-2 rounded-md">
+            Contact
+          </Link>
         </div>
       </nav>
       {/* Drawer Menu */}
@@ -67,7 +86,7 @@ const Header = () => {
             <IoClose className="text-white" />
           </button>
         </div>
-        <div className="drawer-content ">
+        <div className="drawer-content">
           <ul>
             {Menu.map((item) => (
               <li key={item.id}>

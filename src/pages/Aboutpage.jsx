@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Aboutpage = () => {
   return (
-    <div className="bg-gradient-to-r from-gray-600 to-gray-900 text-white  flex flex-col items-center justify-center w-full py-10">
+    <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white  flex flex-col items-center justify-center w-full py-10">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">About Me</h2>
         <img

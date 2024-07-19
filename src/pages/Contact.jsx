@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-gray-600 to-gray-900 text-white min-h-screen flex flex-col items-center justify-center px-4 w-full">
+    <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen flex flex-col items-center justify-center px-4 w-full">
       <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
       <form
         onSubmit={handleSubmit}
@@ -92,7 +92,7 @@ const Contact = () => {
           Send Message
         </button>
       </form>
-    </section>
+    </div>
   );
 };
 

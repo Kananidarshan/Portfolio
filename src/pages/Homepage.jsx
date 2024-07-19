@@ -36,7 +36,7 @@ const Homepage = () => {
   ];
 
   return (
-    <div className=" bg-gradient-to-r from-gray-600 to-gray-900 w-full text-white  flex flex-col items-center justify-center py-4 ">
+    <div className=" bg-gradient-to-r from-gray-900 to-gray-800 w-full text-white  flex flex-col items-center justify-center py-4 ">
       {/* Hero Section */}
       <div className="text-center p-4 ">
         <h1 className="text-5xl font-bold my-8">Welcome to My Portfolio</h1>
